@@ -1,0 +1,29 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$bees-spa-primary: mat.define-palette(mat.$yellow-palette);
+$bees-spa-accent: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+$bees-spa-warn: mat.define-palette(mat.$grey-palette);
+$bees-spa-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $bees-spa-primary,
+      accent: $bees-spa-accent,
+      warn: $bees-spa-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($bees-spa-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
