@@ -1,18 +1,21 @@
-<mat-toolbar>
+<mat-toolbar color="accent">
   <button
+    [routerLink]="['/home']"
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
-    <mat-icon>menu</mat-icon>
+    <mat-icon>home</mat-icon>
   </button>
   <span>Bees</span>
   <span class="example-spacer"></span>
+
   <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
+    mat-flat-button
+    [routerLink]="['/login']"
+    routerLinkActive="router-link-active"
+    color="warn"
   >
-    <mat-icon>favorite</mat-icon>
+    Login
   </button>
 </mat-toolbar>
