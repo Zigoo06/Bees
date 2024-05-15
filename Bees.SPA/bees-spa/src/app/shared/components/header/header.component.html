@@ -1,21 +1,21 @@
-<mat-toolbar color="accent">
-  <button
-    [routerLink]="['/home']"
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon>home</mat-icon>
-  </button>
-  <span>Bees</span>
-  <span class="example-spacer"></span>
+<mat-toolbar color="accent" class="top-bar">
+  <span class="spacer"></span>
 
-  <button
-    mat-flat-button
-    [routerLink]="['/login']"
-    routerLinkActive="router-link-active"
-    color="warn"
-  >
-    Login
+  <span>Contact: {{ contact_number }}</span>
+  <a [routerLink]="['/login']"> Conectează-te </a>
+
+  <button mat-icon-button>
+    <mat-icon>shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
+<div>
+  <mat-toolbar color="primary" class="routes-bar">
+    <div class="logo">BEES</div>
+    <div class="links">
+      <a [routerLink]="['/acasa']" routerLinkActive="selected">ACASA</a>
+      <a [routerLink]="['/produse']" routerLinkActive="selected">PRODUSE</a>
+      <a [routerLink]="['/despre']" routerLinkActive="selected">DESPRE</a>
+      <a [routerLink]="['/contact']" routerLinkActive="selected">CONTACT</a>
+    </div>
+  </mat-toolbar>
+</div>

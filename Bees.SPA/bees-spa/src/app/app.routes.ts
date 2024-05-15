@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { RegisterComponent } from './shared/components/register/register.component';
 import { HomePageComponent } from './home/components/home-page/home-page.component';
-import { LoginComponent } from './shared/components/login/login.component';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   {
-    path: 'home',
+    path: 'acasa',
     component: HomePageComponent,
   },
   {
@@ -17,6 +17,6 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/acasa', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
