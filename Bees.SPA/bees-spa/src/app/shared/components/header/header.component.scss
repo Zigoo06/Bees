@@ -1,3 +1,15 @@
-.example-spacer {
+.spacer {
   flex: 1 1 auto;
+}
+
+a {
+  margin: 1rem;
+}
+
+.top-bar {
+  max-height: 2rem;
+}
+
+.routes-bar {
+  max-width: 30rem;
 }

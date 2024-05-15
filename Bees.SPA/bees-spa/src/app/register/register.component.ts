@@ -9,8 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { AccountService } from '../../services/account.service';
-import { User } from '../../models/user';
+import { AccountService } from '../shared/services/account.service';
+import { User } from '../shared/models/user';
 
 @Component({
   selector: 'app-register',
@@ -55,9 +55,9 @@ export class RegisterComponent {
       return 'Password must have at least 8 characters';
     }
     return this.password.hasError('pattern')
-      ? `Password must contain at least 1: 
+      ? `Password must contain at least 1:
       - big letter[A-Z],
-      - small letter[a-z], 
+      - small letter[a-z],
       - number[1-9],
       - special character`
       : '';
