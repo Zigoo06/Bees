@@ -4,12 +4,20 @@
 
 a {
   margin: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 .top-bar {
   max-height: 2rem;
 }
-
+.logo,
+.selected {
+  font-weight: bold;
+}
 .routes-bar {
-  max-width: 30rem;
+  max-height: 3rem;
+  display: flex;
+  justify-content: space-around;
 }

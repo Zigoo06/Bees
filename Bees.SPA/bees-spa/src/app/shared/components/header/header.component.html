@@ -1,28 +1,21 @@
 <mat-toolbar color="accent" class="top-bar">
   <span class="spacer"></span>
 
-  <span>Contact: +40 752 XXX XXX</span>
-  <a [routerLink]="['/login']" routerLinkActive="router-link-active">
-    Conectează-te
-  </a>
+  <span>Contact: {{ contact_number }}</span>
+  <a [routerLink]="['/login']"> Conectează-te </a>
 
   <button mat-icon-button>
     <mat-icon>shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
 <div>
-  <div class="logo">Bees</div>
-
   <mat-toolbar color="primary" class="routes-bar">
-    <a [routerLink]="['/acasa']" routerLinkActive="router-link-active">ACASA</a>
-    <a [routerLink]="['/produse']" routerLinkActive="router-link-active"
-      >PRODUSE</a
-    >
-    <a [routerLink]="['/despre']" routerLinkActive="router-link-active"
-      >DESPRE</a
-    >
-    <a [routerLink]="['/contact']" routerLinkActive="router-link-active"
-      >CONTACT</a
-    >
+    <div class="logo">BEES</div>
+    <div class="links">
+      <a [routerLink]="['/acasa']" routerLinkActive="selected">ACASA</a>
+      <a [routerLink]="['/produse']" routerLinkActive="selected">PRODUSE</a>
+      <a [routerLink]="['/despre']" routerLinkActive="selected">DESPRE</a>
+      <a [routerLink]="['/contact']" routerLinkActive="selected">CONTACT</a>
+    </div>
   </mat-toolbar>
 </div>

@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   {
-    path: 'home',
+    path: 'acasa',
     component: HomePageComponent,
   },
   {
@@ -17,6 +17,6 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/acasa', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
