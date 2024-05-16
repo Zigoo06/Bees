@@ -9,8 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { AccountService } from '../shared/services/account.service';
-import { User } from '../shared/models/user';
+import { AccountService } from '../../../shared/services/account.service';
+import { User } from '../../../shared/models/user';
 
 @Component({
   selector: 'app-register',

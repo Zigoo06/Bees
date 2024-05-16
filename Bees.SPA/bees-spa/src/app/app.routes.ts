@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './home/components/home-page/home-page.component';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './pages/components/register/register.component';
+import { LoginComponent } from './pages/components/login/login.component';
+import { HomePageComponent } from './pages/components/home-page/home-page.component';
 
 export const routes: Routes = [
   {

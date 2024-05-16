@@ -1,0 +1,22 @@
+.welcome-page {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    width: 80%;
+  }
+  .description {
+    width: 80%;
+  }
+}
+.separator {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
